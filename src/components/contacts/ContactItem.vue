@@ -8,7 +8,7 @@
     <button type="button" name="button" class = "info">
       Info
     </button>
-    <button type="button" name="button" class = "rm" v-on:click="$emit('remove-contact',contact.id)" onClick="return confirm('Are you sure?')">
+    <button type="button" name="button" class = "rm" v-on:click="$emit('remove-contact',contact.id)">
       &times;
     </button>
   </div>

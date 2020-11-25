@@ -19,7 +19,10 @@ export default {
   },
   methods: {
     removeContact(id){
-      this.$emit('remove-contact', id)
+      //this.$emit('remove-contact', id)
+      if(confirm("Do you really want to delete?")){
+        this.$emit('remove-contact', id)
+      }
     }
   }
 }
