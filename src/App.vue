@@ -20,9 +20,6 @@ export default {
   data() {
     return {
       contacts: [
-        {id: 1, name: 'name', number: '89262772323'},
-        {id: 2, name: 'name1', number: '89262472323'},
-        {id: 3, name: 'name2', number: '89262732323'}
       ]
     }
   },
