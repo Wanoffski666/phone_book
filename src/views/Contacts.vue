@@ -1,9 +1,15 @@
 <template>
-  <div id="app">
-    <h1>Phone book</h1>
-    <hr>
-
-    <router-view />
+  <div>
+    <AddContactItem
+      @add-contact = "addContact"
+    />
+    <ContactList
+    v-if="contacts.length"
+    v-bind:contacts="contacts"
+    @remove-contact="removeContact"
+    />
+    <p v-else>No contacts avialable</p>
+    <a href="/Info">asdasdasd</a>
   </div>
 </template>
 
@@ -32,14 +38,3 @@ export default {
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
